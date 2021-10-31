@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Andada Pro', serif;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+  background-color: #f3f7f9;
+  letter-spacing: 0px;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    color: black;
+}
+
+h3{
+  font-family: 'Andada Pro', sans-serif;
+  color: black;
+}
+
+h2{
+  font-family: 'Teko', sans-serif;
+  color: black;
+}

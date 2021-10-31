@@ -1,0 +1,25 @@
+
+h4{
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+}
+
+h4.after:after {
+    content: ' ';
+    display: block;
+    border: 1px solid #06fafa;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+} 
+
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 250px){
+  .input{
+    width: 100px;
+  }
+}

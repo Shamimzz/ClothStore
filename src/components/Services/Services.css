@@ -1,0 +1,44 @@
+
+ .Img{
+    width:90%;
+    height:auto;
+ }
+
+
+.section-title{
+    width: 80%;
+    margin: auto;
+}
+
+.all-products{
+  width:90%;
+  margin: auto;
+}
+
+.section-title:after {
+    content: ' ';
+    display: block;
+    border: 1px solid #06fafa;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.shown{
+    color: #f7b614;
+    font-weight: 400;
+}
+
+.product{
+  position: relative;
+}
+.off{
+  margin-top: 0%;  
+  margin-left: 0%;
+  position: absolute;
+  background-color: #54def03a;
+  color: black;
+  padding: 5px;
+  border-radius: 2px;
+}

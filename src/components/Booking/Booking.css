@@ -1,0 +1,20 @@
+
+.Booking{
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+}
+
+#img{
+    width: 30%;
+    width: 150px;
+    height: 150px;
+}
+
+.content{
+  
+}
+.content p{
+  width: 100%;
+}
