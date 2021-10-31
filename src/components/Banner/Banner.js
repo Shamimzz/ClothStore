@@ -3,11 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Banner.css';
 
-// import {banner} from '../images/slider-courier-mask.png';
+import banner from './slider-courier-mask.png';
 
 // Banner part
 const Banner = () => {
-    const banner = 'http://gomoto.like-themes.com/wp-content/uploads/2020/04/slider-courier-mask.png';
+
     return (
         <div className="banner">
            <div className="row pt-5 pb-5" >
