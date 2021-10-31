@@ -16,6 +16,7 @@ import SignUp from './components/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
 import AddServices from './components/Services/AddServices/AddServices';
 import Admin from './components/Admin/Admin';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -50,6 +51,9 @@ function App() {
            </PrivateRoute>
            <Route path="/login">
              <Login></Login>
+           </Route>
+           <Route path="/about">
+             <About></About>
            </Route>
            <Route path="/addServices">
              <AddServices></AddServices>

@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 
 
 const Services = () => {
-    const {user, isLoading} = useAuth();
+    const {user} = useAuth();
     const [Services, setServices] = useState([]);
     
    // Useing Get method to show or read all data in Client Site.
@@ -39,8 +39,8 @@ const Services = () => {
         }
       });
    }
-    
-
+  
+   // handle Order button........................ 
    const handleOrderBtn = (index) => {
      if(user.email){
       AddToCard(index);
@@ -49,7 +49,6 @@ const Services = () => {
        swal('For Ordering Foods', 'You have To Login First!')
      }
    }
-
 
     return (
         <div className="mt-5 mb-5">
@@ -67,12 +66,8 @@ const Services = () => {
                   <img className="Img"src={pd?.img} alt="" srcset="" /> 
                   <h5>{pd?.name}</h5>
                   <h5>{pd?.price}</h5>
-                  <h6>{pd?.details.slice(0, 120)}</h6>
-                 
+                  <h6>{pd?.details.slice(0, 120)}</h6>              
                   <button  onClick={()=> handleOrderBtn(index)} className="btn btn-warning m-2">Order Now</button>
-                  {/* {user?.email &&
-                     <button onClick={()=> AddToCard(index)} className="btn btn-warning m-2">Order Now</button>                           
-                  } */}
                 </div>
               </div>
             ))

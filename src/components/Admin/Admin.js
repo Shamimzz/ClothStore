@@ -20,10 +20,11 @@ const Admin = () => {
     });
    },[isDelete])
 
-
-   const handleDelete = (id) => {
-     console.log(id);
-     fetch(`https://grisly-werewolf-53088.herokuapp.com/adminPannel/${id}`, {
+  
+   // handle Cancel collection product..................... 
+   const handleDelete = (key) => {
+     console.log(key);
+     fetch(`https://grisly-werewolf-53088.herokuapp.com/adminPannel/${key}`, {
          method: 'DELETE',
          headers: {"content-type": "application/json"}
      }).then(res => res.json())
@@ -36,7 +37,7 @@ const Admin = () => {
        })
    }
 
-
+     // handle Updatee collection product..................... 
    const handleUpadate = (id) => {
      fetch(`https://grisly-werewolf-53088.herokuapp.com/adminPannel/approved/${id}`, {
        method: 'PUT',

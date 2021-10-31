@@ -4,11 +4,10 @@ import { useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 
-
+// Place Oeder................... 
 const PlaceOrder = () => {
   const {user} = useAuth();
   const {register, handleSubmit, formState: { errors }} = useForm();
-
   const history = useHistory();
 
   const onSubmit = data =>{
@@ -24,7 +23,6 @@ const PlaceOrder = () => {
      .then(data=> {
         console.log(data);
         if(data.insertedId){
-          // console.log(data.insertedId)
           history.push("/myOrders")
         }
      })

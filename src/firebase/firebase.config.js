@@ -7,6 +7,7 @@ const firebaseConfig = {
   storageBucket: "befoody-4c297.appspot.com",
   messagingSenderId: "313218985001",
   appId: "1:313218985001:web:70c5372dc3de09d4338038" 
+  
 
   // apiKey: "AIzaSyAGN_PdJ9APGoFvi-TZ2sUUVgMeVeZ5pk0",
   // authDomain: "befoody-client-site.firebaseapp.com",

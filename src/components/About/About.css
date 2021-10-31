@@ -1,0 +1,44 @@
+.About-banner{
+    padding:100px 0px 300px;
+    position: relative;
+    background:url("https://media.istockphoto.com/photos/food-delivery-app-order-with-phone-online-mobile-service-for-take-picture-id1287186696?b=1&k=20&m=1287186696&s=170667a&w=0&h=V8K-ZfsB7KgxU_KPjpTgkNktiBh8Vbs6NJOEkokN2_w=");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height:70%;
+    overflow: hidden;
+}
+
+.logoImg{
+  width: 70%;
+  height: 70%;
+  /* border-radius: 70%; */
+}
+
+.section-heading{
+    margin-bottom:70px;
+  }
+h3.section-heading{
+    font-size: 38px;
+    margin:10px 0px 10px;
+    line-height: 44px;
+  }
+p.section-heading{
+    color: #222222;
+  }
+.center-heading{
+    text-align:Center;
+  }
+p.center-heading{
+    padding:0px 70px;
+  }
+.subheading{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+.cardImg{
+    width: 100%;
+  }

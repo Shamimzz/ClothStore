@@ -8,6 +8,8 @@ const AddServices = () => {
     const history = useHistory();
     const {register, handleSubmit, formState: { errors }} = useForm();
 
+
+    // Add Service on database.................
     const onSubmit = data =>{
         console.log(data);
       fetch(`https://grisly-werewolf-53088.herokuapp.com/addServiceDB`,{
@@ -21,8 +23,6 @@ const AddServices = () => {
              history.push('/home')
          })
     }
-
-
 
 
     return (
