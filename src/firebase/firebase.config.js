@@ -1,11 +1,19 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAGN_PdJ9APGoFvi-TZ2sUUVgMeVeZ5pk0",
-  authDomain: "befoody-client-site.firebaseapp.com",
-  projectId: "befoody-client-site",
-  storageBucket: "befoody-client-site.appspot.com",
-  messagingSenderId: "415832776230",
-  appId: "1:415832776230:web:3a44683f7151159d36d0e7"
+
+  apiKey: "AIzaSyAsbb9hVhNGBmtmM5eQ5MW4bGexB6QVSDs",
+  authDomain: "befoody-4c297.firebaseapp.com",
+  projectId: "befoody-4c297",
+  storageBucket: "befoody-4c297.appspot.com",
+  messagingSenderId: "313218985001",
+  appId: "1:313218985001:web:70c5372dc3de09d4338038" 
+
+  // apiKey: "AIzaSyAGN_PdJ9APGoFvi-TZ2sUUVgMeVeZ5pk0",
+  // authDomain: "befoody-client-site.firebaseapp.com",
+  // projectId: "befoody-client-site",
+  // storageBucket: "befoody-client-site.appspot.com",
+  // messagingSenderId: "415832776230",
+  // appId: "1:415832776230:web:3a44683f7151159d36d0e7"
 };
 
 export default firebaseConfig;
