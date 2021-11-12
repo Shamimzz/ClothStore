@@ -9,7 +9,6 @@ import swal from 'sweetalert';
 // import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 
-
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth'
 import { Link } from 'react-router-dom';
@@ -24,14 +23,14 @@ import Swal from 'sweetalert2'
 
 const Login = () => {
   // Gets data from returen firebase by UseAuth().......
-  const {handlePasswordSet, email, password, auth, handleEmailSet, handeleGoogleAuth} = useAuth();
+  const {StoreUserInfoDb, handlePasswordSet, email, password, auth, handleEmailSet, handeleGoogleAuth} = useAuth();
 
   // used for privateRouter locations.
   const location = useLocation();  
   const history = useHistory();
 
   // Shop korte chaile taree direct kore ene login page a anlm || r jodi direct login kore tahle Home a pathay dibo.
-  const redirect_uri = location.state?.from || '/collection';
+  const redirect_uri = location.state?.from || '/home';
   
 
 
@@ -43,7 +42,7 @@ const Login = () => {
     .then((result) => {
 
       // Modal that rePresents Login success.
-      const Toast = Swal.mixin({
+      const Toast = Swal.mixin({ 
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
@@ -58,9 +57,10 @@ const Login = () => {
         icon: 'success',
         title: 'Signed in successfully'
       })
-      
       // After Login Redirect Annother Pages.
        history.push(redirect_uri) 
+      // after sign in it will store data on mongodb database.
+        StoreUserInfoDb(result.user.displayName, result.user.email);
     })
   }
 

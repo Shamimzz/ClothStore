@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import './About.css';
 
-import bg from './foodbanner.jpg';
 
 const About = () => {
     return (
@@ -22,7 +21,7 @@ const About = () => {
           <Col>
            <Card className="p-4 shadow-sm" text="dark">
               <div className="m-auto fs-3 text-success">
-                <img className="logoImg" src={bg} alt="" srcset="" />
+                <img className="logoImg" src="https://media.istockphoto.com/photos/food-delivery-app-order-with-phone-online-mobile-service-for-take-picture-id1287186696?b=1&k=20&m=1287186696&s=170667a&w=0&h=V8K-ZfsB7KgxU_KPjpTgkNktiBh8Vbs6NJOEkokN2_w=" alt="" srcset="" />
               </div>
               <h4 className="text-bold fs-3 text-warning">Fast Food</h4>
               <Card.Text>Your daily values may be higher or lower depending on your calorie needs.</Card.Text>

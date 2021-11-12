@@ -21,6 +21,7 @@ export const useFirebase = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(true);
+    const [admin, setAdmin] = useState(false);
 
 
 
@@ -83,13 +84,45 @@ export const useFirebase = () => {
         photo : photoUrl
       }
        setUser(loggedUser);
+       StoreUserInfoDb(result.user.displayName, result.user.email);
      })
     .catch((error) => {
       setError(error.message);
     });
   }
 
+ // used singUp from.
+ // resgisteratiuon information is storeing firebase & also my database mongobd......
+ const StoreUserInfoDb = (name, email) => {
+  const info = {name, email};
+  fetch('http://localhost:5000/signup/userInfo', {
+    method: 'POST',
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(info)
+  }).then(res => res.json())
+    .then(data => console.log(data))
+ }
+
+
+
+// Check Admin or not............ 
+useEffect( () => {
+  fetch(`http://localhost:5000/checkAdmin/${user.email}`)
+    .then(res=> res.json())
+    .then(data => {
+      setAdmin(data.admin)
+      console.log(data)
+    })
+}, [user?.email])
+
+
+
+
+
+
   return {
+      admin,
+      setIsLoading,
       setUser,
       setEmail,
       setPassword,
@@ -105,7 +138,8 @@ export const useFirebase = () => {
       password,
       handleNameSet,
       handleEmailSet,
-      handlePasswordSet
+      handlePasswordSet,
+      StoreUserInfoDb
     };
 }
 

@@ -69,7 +69,7 @@ const Services = () => {
                   <h6>{pd?.details.slice(0, 120)}</h6>              
                   <button  onClick={()=> handleOrderBtn(index)} className="btn btn-warning m-2">Order Now</button>
                 </div>
-              </div>
+              </div>  
             ))
             :
             <div>

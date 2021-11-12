@@ -13,7 +13,7 @@ import swal from 'sweetalert';
 const SignUp = () => {
     
     // Gets data from returen firebase by UseAuth().......
-    const {handeleGoogleAuth, name,  email, setUser, password, auth, handlePasswordSet, handleEmailSet, handleNameSet} = useAuth();
+    const {StoreUserInfoDb, name,  email, setUser, password, auth, handlePasswordSet, handleEmailSet, handleNameSet} = useAuth();
 
      // used for privateRouter locations.
      const location = useLocation();  
@@ -26,11 +26,13 @@ const SignUp = () => {
      // Sign Up with email And Password.
      const SignUpWithEmail = (e) =>{
         e.preventDefault()
-        console.log(email, name, password);
+        console.log(name, email, password)
         createUserWithEmailAndPassword(auth, email, password)
         .then((result)=>{
           setUser(result.user);
           history.push(redirect_uri) 
+          //from firebase useing for passing parameter.
+          StoreUserInfoDb(result.user.displayName, result.user.email);
           // updateProfile
           updateProfile(auth.currentUser, {
             displayName: name

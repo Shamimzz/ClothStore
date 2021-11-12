@@ -5,49 +5,55 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login'
 import AuthProvider from './context/AuthProvider';
-import MyOrders from './components/MyOrders/MyOrders';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Notfound from './components/Notfound/Notfound';
-import Services from './components/Services/Services';
-import Booking from './components/Booking/Booking';
 import Collection from './components/Collection/Collection';
 import SignUp from './components/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
-import AddServices from './components/Services/AddServices/AddServices';
-import Admin from './components/Admin/Admin';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Products from './components/Nish/Products/Products';
+import Blog from './components/Blog/Blog';
+import PlaceOrder from './components/Shipping/PlaceOrder/PlaceOrder';
+import DashBoard from './components/DashBoard/DashBoard/DashBoard';
+import AllReviews from './components/AllReviews/AllReviews';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
        <BrowserRouter>
-         <Header></Header>
+         {/* <Header></Header> */}
          <Switch>
            <Route exact path="/">
              <Home></Home>
            </Route>
-           <Route path="/home">
+           <Route exact path="/home">
              <Home></Home>
            </Route>
-           <Route path="/services">
-             <Services></Services>
+           <Route exact path="/products">
+             <Products></Products>
            </Route>
-           <PrivateRoute path="/collection">
+           <Route exact path="/blog">
+             <Blog></Blog>
+           </Route>
+           <PrivateRoute exact path="/collection">
              <Collection></Collection>
            </PrivateRoute>
-           <Route path="/booking/:id">
-             <Booking></Booking>
-           </Route>
-           <Route path="/signup">
+           <Route exact path="/signup">
              <SignUp></SignUp>
            </Route>
-           <PrivateRoute path="/placeorder">
+           <Route exact path="/placeOrder">
              <PlaceOrder></PlaceOrder>
-           </PrivateRoute>
-           <PrivateRoute path="/admin">
-             <Admin></Admin>
+           </Route>
+           <Route exact path="/allReviews">
+             <AllReviews></AllReviews>
+           </Route>
+           <Route exact path="/products/:productId">
+             <PlaceOrder></PlaceOrder>
+           </Route>
+           <PrivateRoute path="/dashBoard">
+             <DashBoard></DashBoard>
            </PrivateRoute>
            <Route path="/login">
              <Login></Login>
@@ -55,12 +61,9 @@ function App() {
            <Route path="/about">
              <About></About>
            </Route>
-           <Route path="/addServices">
-             <AddServices></AddServices>
+           <Route path="/contact">
+             <Contact></Contact>
            </Route>
-           <PrivateRoute path="/MyOrders">
-             <MyOrders></MyOrders>
-           </PrivateRoute>
            <PrivateRoute path="/placeorder">
              <PlaceOrder></PlaceOrder>
            </PrivateRoute>
@@ -68,7 +71,7 @@ function App() {
              <Notfound></Notfound>
            </Route>
          </Switch>
-         <Footer></Footer>
+         {/* <Footer></Footer> */}
        </BrowserRouter>
       </AuthProvider>
     </div>
