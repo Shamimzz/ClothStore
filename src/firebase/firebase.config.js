@@ -1,20 +1,11 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-
-  apiKey: "AIzaSyAsbb9hVhNGBmtmM5eQ5MW4bGexB6QVSDs",
-  authDomain: "befoody-4c297.firebaseapp.com",
-  projectId: "befoody-4c297",
-  storageBucket: "befoody-4c297.appspot.com",
-  messagingSenderId: "313218985001",
-  appId: "1:313218985001:web:70c5372dc3de09d4338038" 
-  
-
-  // apiKey: "AIzaSyAGN_PdJ9APGoFvi-TZ2sUUVgMeVeZ5pk0",
-  // authDomain: "befoody-client-site.firebaseapp.com",
-  // projectId: "befoody-client-site",
-  // storageBucket: "befoody-client-site.appspot.com",
-  // messagingSenderId: "415832776230",
-  // appId: "1:415832776230:web:3a44683f7151159d36d0e7"
+  apiKey: "AIzaSyCD0h_9Z-kV54d6uuAzOhorJjJmNxp4w2A",
+  authDomain: "clothstore-26d22.firebaseapp.com",
+  projectId: "clothstore-26d22",
+  storageBucket: "clothstore-26d22.appspot.com",
+  messagingSenderId: "245119904518",
+  appId: "1:245119904518:web:a622da30ddc2cc8ccd0c87"
 };
 
 export default firebaseConfig;
@@ -22,7 +13,9 @@ export default firebaseConfig;
 
 
 
-// //.env.local
+// Not Working...............................
+
+//.env.local
 
 // REACT_APP_FIREBASE_API_KEY=AIzaSyAGN_PdJ9APGoFvi-TZ2sUUVgMeVeZ5pk0
 // REACT_APP_FIREBASE_AUTH_DOMAIN=befoody-client-site.firebaseapp.com
