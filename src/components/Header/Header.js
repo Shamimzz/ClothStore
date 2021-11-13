@@ -42,7 +42,7 @@ const Header = () => {
                   admin ?
                    <Link to="/dashboard/adminDashboard" className="text-bold fs-3" type="submit"><MdDashboardCustomize/></Link>
                    :
-                   <Link to="/dashboard" className="text-bold fs-3" type="submit"><MdDashboardCustomize/></Link>
+                   <Link to="/dashboard" className="text-bold fs-3" type="submit"><MdDashboardCustomize color="white" /></Link>
                 }
                </span>
                }

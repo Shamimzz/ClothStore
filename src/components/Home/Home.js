@@ -19,8 +19,7 @@ const Home = () => {
           <Exclusive></Exclusive>
           <AllReviews></AllReviews>
           <Blog></Blog>
-          {/* <About></About> */}
-          {/* <Contact></Contact> */}
+          <About></About>
         </div>
     );
 };

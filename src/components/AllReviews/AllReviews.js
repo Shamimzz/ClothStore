@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import { Card, Carousel, Col, Row } from 'react-bootstrap';
 import "./AllReviews.css";
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -22,77 +22,70 @@ const AllReviews = () => {
    })
 
 
-
-    //Owl Carousel Settings
-    const options = {
-      loop: true,
-      center: true,
-      items: 1,
-      margin: 0,
-      autoplay: true,
-      dots: true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
-      nav: false,
-      responsive: {
-          0: {
-              items: 1
-          },
-          600: {
-              items: 1
-          },
-          900: {
-              items: 2
-          },
-          1000: {
-              items: 3
-          }
-      }
-  };
-
-
-
     return (
       <div className="bgColor pt-5 pb-5">
-      <div className="container pt-5">
-      <h2>ALl Reserved {reviews.length}</h2>
-        
-      <section id="testimonial" className="testimonials pt-70 pb-70">
-            <div className="container mt-5">
-                <h4 className="miniTitle text-center">TESTIMONIALS</h4>
-                <div className="text-center ">
-                    <h3 className="sectionTitle">What Our Clients are Saying?</h3>
-                </div>
-                <div className="row">
-                    <div className="col-md-12 m-auto">
-                        <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
-                            {
-                                reviews.length === 0 ?
-                                    <div class="item">
-                                        <div class="shadow-effect">
-                                            {/* <img class="img-circle" src={reviews.img} /> */}
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                        </div>
-                                        <div class="testimonial-name">
-                                            <h5>Rajon Rony</h5>
-                                            <small>ITALY</small>
-                                        </div>
-                                      </div>  
-                                      :
-                                    reviews.map(review => <SingleReview
-                                      review={review}
-                                      key={review._id} 
-                                     />
-                                    )               
-                            } 
-                        </OwlCarousel>
-                    </div>
-                </div>
+        <div className="container pt-5">
+             <div className="text-center">
+                 <h2>ALl Reserved {reviews.length}</h2>
+                 <h3 className="sectionTitle">What Our Clients are Saying?</h3>
             </div>
-        </section>
 
+          <Carousel className="bgColor">
+              <Carousel.Item interval={1500} className="imgDiv">
+                {/* <img 
+                  className="carouselImg"
+                  src="https://i.ibb.co/MnMBnB4/cover1.jpg"
+                  alt="First slide"
+                /> */}
+                <Carousel.Caption className="caption carousel-contet">
+                   <h1 class="text-white">SHOPPING IS MY FIRST</h1>
+                   <h1 class=" hero">CHOICE</h1>
+                   <p className="carousel-contet">Drag and drop anywhere you want and start uploading your images now</p>
+                    <Link to="/products" class="text-white btn btn-black">SHOP NOW</Link>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={1500} className="imgDiv">
+                {/* <img
+                  className="carouselImg"
+                  src="https://i.ibb.co/MZ5wB4s/cover2.jpg"
+                  alt="Second slide"
+                /> */}
+                <Carousel.Caption className="caption carousel-contet">
+                   <h1 class="text-white">THE CLOTH EVERYONE</h1>
+                   <h1 class="heroText">DESIRE</h1>
+                   <p className="carousel-contet">Drag and drop anywhere you want and start uploading your images now</p>
+                   <Link to="/products" class="text-white btn btn-black">SHOP NOW</Link>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={1500} className="imgDiv">
+                {/* <img
+                  className="carouselImg"
+                  src="https://i.ibb.co/4WQsy6H/cover3.jpg"
+                  alt="Third slide"
+                /> */}
+                <Carousel.Caption className="caption carousel-contet">
+                  <h1 class="text-white">SHOPPING MAKES ME</h1>
+                   <h1 class="hero">HAPPY</h1>
+                   <p className="carousel-contet">Drag and drop anywhere you want and start uploading your images now</p>
+                   <Link to="/products" class="text-white btn btn-black">SHOP NOW</Link>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={1500} className="imgDiv">
+                {/* <img
+                  className="carouselImg"
+                  src="https://i.ibb.co/HqLNL6q/cover4.jpg"
+                  alt="Third slide"
+                /> */}
+                <Carousel.Caption className="caption carousel-contet">
+                   <h1 class="text-white">THE WATCH EVERYONE</h1>
+                   <h1 class="heroText">DESIRE</h1>
+                   <p className="carousel-contet">Drag and drop anywhere you want and start uploading your images now</p>
+                  <Link to="/products" class="btn btn-black heroBtn">SHOP NOW</Link>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
 
-      </div>
+        </div>
       </div>
     );
 };

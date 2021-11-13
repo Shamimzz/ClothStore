@@ -117,6 +117,9 @@ const ShowcauseHome = () => {
                 </div>
               ))
              }
+             <div class="container text-center pt-5">
+                <span><i><Link to="products" class="wsk-btn">More Collections</Link></i></span>
+             </div>
              </div>
           </div>
         </div>

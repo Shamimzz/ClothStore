@@ -27,14 +27,14 @@
     bottom: 100px !important;
 }
 
-.carousel_about{
+.carousel-contet{
     width: 75%;
     text-align: center;
     margin: auto;
     text-align: center; 
 }
 
-.carousel_about h1{
+.carousel-contet h1{
     width: 100%;
     margin-top: 10px;
     font-size: 3.5rem;
@@ -50,35 +50,27 @@
     background-color: #fd7863;
 }
 
-.carousel_about p{
+.carousel-contet p{
     color: white;
     text-align: center;
     width: 65%;
     padding: 20px 20px;
 }
 
- /* .banner_btn{
-    color: white;
-    border: 2px solid #bdab8d;
-    padding: 10px 25px;
-    text-align: center;
-} */
 
 a{
     text-decoration: none;
   }
 
 
-
-
 @media (max-width:1025px){
-    .carousel_about h1{
+    .carousel-contet h1{
         width: 100%;
         margin: auto;
         margin-left: 0rem !important;
         font-size: 2rem;
     }
-    .carousel_about p{
+    .carousel-contet p{
         width: 100%;
         margin-bottom: 2.5rem;
         margin-left: 0 !important;
@@ -91,13 +83,13 @@ a{
 }
 
 @media (max-width:667px){
-    .carousel_about h1{
+    .carousel-contet h1{
         width: 100%;
         margin: auto;
         margin-left: 0 !important;
         font-size: 1rem;
     }
-    .carousel_about p{
+    .carousel-contet p{
         width: 100%;
         margin: 0;
         margin-left: 0 !important;
@@ -123,13 +115,13 @@ a{
 } 
 
 @media (max-width:357px){
-    .carousel_about h1{
+    .carousel-contet h1{
         width: 100%;
         margin: auto;
         margin-left: 0 !important;
         font-size: 0.8rem;
     }
-    .carousel_about p{
+    .carousel-contet p{
         width: 100%;
         margin: 0;
         margin-left: 0 !important;
