@@ -28,7 +28,7 @@ const PlaceOrder = () => {
 
 
     useEffect(()=>{
-      fetch(`http://localhost:5000/singleProduct/${productId}`)
+      fetch(`https://grisly-werewolf-53088.herokuapp.com/singleProduct/${productId}`)
       .then(res=> res.json())
       .then(data => {
         setOrders(data)
@@ -45,7 +45,7 @@ const PlaceOrder = () => {
         data.price = orders?.price;
         data.img = orders?.img;
 
-        fetch("http://localhost:5000/Shipping", {
+        fetch("https://grisly-werewolf-53088.herokuapp.com/Shipping", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

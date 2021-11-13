@@ -17,7 +17,7 @@ const ManageOrder = () => {
 
 
      useEffect(()=>{
-       fetch('http://localhost:5000/dashboard/manageOrder')
+       fetch('https://grisly-werewolf-53088.herokuapp.com/dashboard/manageOrder')
         .then(res=> res.json())
         .then(data => {
          setOrders(data)
@@ -27,7 +27,7 @@ const ManageOrder = () => {
   
   // handle Delete......
   const handleDelete = (key) => {
-   fetch(`http://localhost:5000/dashboard/myOrders/${key}`, {
+   fetch(`https://grisly-werewolf-53088.herokuapp.com/dashboard/myOrders/${key}`, {
      method: 'DELETE',
     //  headers: {"Content-Type": "application/json"},
    }).then(res => res.json())
@@ -45,7 +45,7 @@ const ManageOrder = () => {
 
    // handle Approved...........
    const handleApprove = (id) => {
-    fetch(`http://localhost:5000/dashboard/manageOrder/approved/${id}`, {
+    fetch(`https://grisly-werewolf-53088.herokuapp.com/dashboard/manageOrder/approved/${id}`, {
         method: 'PUT',
         headers: { "content-type": "application/json" },
       }).then(res=> res.json())

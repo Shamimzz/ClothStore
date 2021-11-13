@@ -16,7 +16,7 @@ const Collection = () => {
     const [Isdelete, setIsDelete] = useState(false);
 
     useEffect( () => {
-      fetch(`https://grisly-werewolf-53088.herokuapp.com/orderCollection/${email}`)
+      fetch(`https://grisly-werewolf-53088.herokuapp.comorderCollection/${email}`)
        .then((response) => response.json())
        .then(data => {
           setOrders(data)
@@ -27,7 +27,7 @@ const Collection = () => {
 
   // handle Delete...................
    const handleDelete = (key) => {
-     fetch(`https://grisly-werewolf-53088.herokuapp.com/deleted/${key}`, {
+     fetch(`https://grisly-werewolf-53088.herokuapp.comdeleted/${key}`, {
         method: "DELETE",
         // headers: { "Content-type": "application/json" },
      }).then((response) => response.json())

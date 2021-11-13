@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const [admins, setAdmins] = useState([]);
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/makeAdmin", {
+        fetch("https://grisly-werewolf-53088.herokuapp.com/makeAdmin", {
           method: "PUT",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),
@@ -19,7 +19,7 @@ const MakeAdmin = () => {
 
 
     useEffect(()=> {
-      fetch("http://localhost:5000/admin")
+      fetch("https://grisly-werewolf-53088.herokuapp.com/admin")
         .then(res=> res.json())
         .then(data=> {
           setAdmins(data)

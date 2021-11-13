@@ -12,7 +12,7 @@ const Services = () => {
     
    // Useing Get method to show or read all data in Client Site.
     useEffect( () => {
-        fetch('https://grisly-werewolf-53088.herokuapp.com/foods')
+        fetch('https://grisly-werewolf-53088.herokuapp.comfoods')
           .then(res => res.json())
           .then(data=> setServices(data))
     }, [])
@@ -23,7 +23,7 @@ const Services = () => {
      const product = (Services[index]);
      product.email = user.email;
 
-     fetch(`https://grisly-werewolf-53088.herokuapp.com/addToCart`, {
+     fetch(`https://grisly-werewolf-53088.herokuapp.comaddToCart`, {
          method: 'POST',
          headers: { "content-type": "application/json" },
          body: JSON.stringify(product),

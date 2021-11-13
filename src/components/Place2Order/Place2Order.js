@@ -14,7 +14,7 @@
 //     const status = "pending"
 //     data.status = status;
 //     console.log(data);
-//     fetch(`https://grisly-werewolf-53088.herokuapp.com/placeorder`,{
+//     fetch(`https://grisly-werewolf-53088.herokuapp.complaceorder`,{
 //       method: "POST",
 //       headers: { "content-type": "application/json" },
 //       body: JSON.stringify(data), 

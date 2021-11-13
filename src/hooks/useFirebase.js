@@ -95,7 +95,7 @@ export const useFirebase = () => {
  // resgisteratiuon information is storeing firebase & also my database mongobd......
  const StoreUserInfoDb = (name, email) => {
   const info = {name, email};
-  fetch('http://localhost:5000/signup/userInfo', {
+  fetch('https://grisly-werewolf-53088.herokuapp.com/signup/userInfo', {
     method: 'POST',
     headers: { "content-type": "application/json" },
     body: JSON.stringify(info)
@@ -107,7 +107,7 @@ export const useFirebase = () => {
 
 // Check Admin or not............ 
 useEffect( () => {
-  fetch(`http://localhost:5000/checkAdmin/${user.email}`)
+  fetch(`https://grisly-werewolf-53088.herokuapp.com/checkAdmin/${user.email}`)
     .then(res=> res.json())
     .then(data => {
       setAdmin(data.admin)

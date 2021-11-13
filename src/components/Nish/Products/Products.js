@@ -27,7 +27,7 @@ const Products = () => {
 
   // Useing Get method to show or read all data in Client Site.
    useEffect( () => {
-       fetch('http://localhost:5000/products')
+       fetch('https://grisly-werewolf-53088.herokuapp.com/products')
          .then(res => res.json())
          .then(data=> setProducts(data))
    }, [])
@@ -37,7 +37,7 @@ const Products = () => {
   // const handleBooking = (id) => {
   //    id.email = user.email;
     
-  //    fetch('http://localhost:5000/ConfirmOrder', {
+  //    fetch('https://grisly-werewolf-53088.herokuapp.com/ConfirmOrder', {
   //      method: 'POST',
   //      headers: { 'Content-Type': 'application/json'},
   //      body: JSON.stringify(id),

@@ -16,7 +16,7 @@ const Review = () => {
     const onSubmit = data =>{
         data.img = user.photoURL;
         console.log(data);
-      fetch(`http://localhost:5000/reviewInserting`,{
+      fetch(`https://grisly-werewolf-53088.herokuapp.com/reviewInserting`,{
           method: 'POST',
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

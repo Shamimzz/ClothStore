@@ -12,7 +12,7 @@ const AddServices = () => {
     // Add Service on database.................
     const onSubmit = data =>{
         console.log(data);
-      fetch(`http://localhost:5000/addServiceInserting`,{
+      fetch(`https://grisly-werewolf-53088.herokuapp.com/addServiceInserting`,{
           method: 'POST',
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

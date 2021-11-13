@@ -21,7 +21,7 @@ const ShowcauseHome = () => {
 
   // Useing Get method to show or read all data in Client Site.
    useEffect( () => {
-       fetch('http://localhost:5000/products')
+       fetch('https://grisly-werewolf-53088.herokuapp.com/products')
          .then(res => res.json())
          .then(data=> setProducts(data))
    }, [])

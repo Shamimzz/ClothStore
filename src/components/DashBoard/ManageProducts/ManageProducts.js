@@ -10,7 +10,7 @@ const ManageProducts = () => {
     const [Isdelete, setIsDelete] = useState(false);
 
     useEffect(()=> {
-        fetch("http://localhost:5000/productManagement")
+        fetch("https://grisly-werewolf-53088.herokuapp.com/productManagement")
           .then(res=> res.json())
           .then(data=> {
             setProducts(data);
@@ -22,7 +22,7 @@ const ManageProducts = () => {
 
     const ProductDelete = (key) => {
        console.log(key);
-       fetch(`http://localhost:5000/productManagement/${key}`,{
+       fetch(`https://grisly-werewolf-53088.herokuapp.com/productManagement/${key}`,{
            method: 'DELETE',
        }).then(res=> res.json())
          .then(data=> {

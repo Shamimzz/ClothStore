@@ -14,7 +14,7 @@ const MyOrders = () => {
 
     useEffect(()=>{
       // setIsLoading(true);
-      fetch(`http://localhost:5000/dashboard/myOrders?email=${user.email}`)
+      fetch(`https://grisly-werewolf-53088.herokuapp.com/dashboard/myOrders?email=${user.email}`)
        .then(res=> res.json())
        .then(data => {
          setProducts(data)
@@ -29,7 +29,7 @@ const MyOrders = () => {
     // handle Delete......
     const handleDelete = (key) => {
         console.log(key);
-       fetch(`http://localhost:5000/dashboard/myOrders/${key}`, {
+       fetch(`https://grisly-werewolf-53088.herokuapp.com/dashboard/myOrders/${key}`, {
          method: 'DELETE',
        }).then(res => res.json())
          .then(data => {
