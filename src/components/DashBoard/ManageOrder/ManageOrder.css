@@ -51,9 +51,10 @@
 	color: #008ea1;
 	border-radius: 30px 0px 0px 0px;
 }
-.content{
-	transition: margin-left 300ms;
+.content {
+    transition: margin-left 300ms;
     margin-left: 20%;
+    margin-top: -100px;
 }
 header{
 	background-color: #fff;

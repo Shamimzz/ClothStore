@@ -1,9 +1,10 @@
 
 #footer {
-    color: black;
-    font-size: 14px;
-    background: #f1f7fd;
-  }
+  color: black;
+  font-size: 14px;
+  /* margin-top: -2000px; */
+  background: #f1f7fd;
+}
   
   #footer .footer-top {
     color: #fff;

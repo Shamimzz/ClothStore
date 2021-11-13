@@ -83,7 +83,7 @@ const DashBoard = () => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-                <a href="#" className="p-2 name">{user?.email && user.displayName}</a>
+                <a href="#" className="p-2 name text-white">{user?.email && user.displayName}</a>
                 <span>{user?.email && <img className="profileImg" src={user.photoURL} alt=""/>}</span>
                </Navbar.Text> 
                 { !user.email ? 

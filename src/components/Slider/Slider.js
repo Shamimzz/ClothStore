@@ -29,7 +29,7 @@ const Slider = () => {
           />
           <Carousel.Caption className="caption carousel_about">
              <h1 class="text-white">THE WATCH EVERYONE</h1>
-             <h1 class=" mx-auto">DESIRE</h1>
+             <h1 class=" mx-auto hero">DESIRE</h1>
              <p className="carousel_about">A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
              <Link to="/products" class="banner_btn btn-black">SHOP NOW</Link>
           </Carousel.Caption>
@@ -44,7 +44,7 @@ const Slider = () => {
              <h1 class="text-white">THE WATCH EVERYONE</h1>
              <h1 class=" mx-auto">DESIRE</h1>
              <p className="carousel_about">A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
-             <Link to="/products" class="banner_btn btn-black">SHOP NOW</Link>
+             <Link to="/products" class="text-white btn btn-black">SHOP NOW</Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1500} className="imgDiv">
@@ -55,9 +55,9 @@ const Slider = () => {
           />
           <Carousel.Caption className="caption carousel_about">
             <h1 class="text-white">THE WATCH EVERYONE</h1>
-             <h1 class=" mx-auto">DESIRE</h1>
+             <h1 class=" mx-auto hero">DESIRE</h1>
              <p className="carousel_about">A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
-             <Link to="/products" class="banner_btn btn-black">SHOP NOW</Link>
+             <Link to="/products" class="text-white btn btn-black">SHOP NOW</Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1500} className="imgDiv">
@@ -70,7 +70,7 @@ const Slider = () => {
              <h1 class="text-white">THE WATCH EVERYONE</h1>
              <h1 class=" mx-auto">DESIRE</h1>
              <p className="carousel_about">A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
-            <Link to="/products" class="banner_btn btn-black">SHOP NOW</Link>
+            <Link to="/products" class="btn btn-black heroBtn">SHOP NOW</Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

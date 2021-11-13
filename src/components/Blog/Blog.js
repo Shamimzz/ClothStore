@@ -1,5 +1,8 @@
 import React from 'react';
 import './Blog.css'
+import { HashLink as Link } from 'react-router-hash-link';
+
+
 
 const Blog = () => {
     return(         
@@ -18,8 +21,8 @@ const Blog = () => {
                          <div class="price">
                            <s>$24.00</s>$19.00
                          </div>
-		        		           <button className="blog-btn">Read More</button>
-                           </figcaption><a href="#"></a>
+		        		           <button as={Link} to="*" className="blog-btn">Read More</button>
+                           </figcaption>
                         </figure>
                  </div>
 		             <div className="col-md-4 col-sm-6">
@@ -31,8 +34,8 @@ const Blog = () => {
                            <div class="price">
                              <s>$24.00</s>$19.00
                            </div>
-                          <button className="blog-btn">Read More</button>
-                          </figcaption><a href="#"></a>
+                          <button as={Link} to="*" className="blog-btn">Read More</button>
+                          </figcaption>
                         </figure>
 		        	 </div>
 		             <div className="col-md-4 col-sm-6">
@@ -44,8 +47,8 @@ const Blog = () => {
                           <div class="price">
                             <s>$24.00</s>$19.00
                           </div>
-                        <button className="blog-btn">Read More</button>
-                        </figcaption><a href="#"></a>
+                        <button as={Link} to="*" className="blog-btn">Read More</button>
+                        </figcaption>
                       </figure>
 		        	 </div>
 		          </div>

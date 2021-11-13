@@ -7,6 +7,9 @@ body{
 }
 
 
+
+
+
 .shell{
   padding:30px 0;
 }
@@ -30,16 +33,18 @@ body{
   -khtml-transform:translate(-50%);
   width: 100%;
   padding: 15px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .wsk-cp-img img{
   width:100%;
   transition: all 0.2s ease-in-out;
   border-radius:6px;
 }
+
 .wsk-cp-product:hover .wsk-cp-img{
-  top:-40px;
+  top:-2px;
 }
+
 .wsk-cp-product:hover .wsk-cp-img img{
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
@@ -151,12 +156,17 @@ a.buy-btn{
 }
 a.buy-btn:hover , a.buy-btn:active, a.buy-btn:focus{
   border-color: #FF9800;
+  align-items: center;
+  vertical-align: center;
+  width: 40px;
+  height: 40px;
   background: linear-gradient(
 -155deg,#fd3d6b 0,#fd7863 98%,#f3dfe0 100%);
-  /* background: #FF9800; */
   color: #fff;
   text-decoration:none;
 }
+
+
 .wsk-btn{
   display:inline-block;
   color:#212121;

@@ -27,7 +27,7 @@ const AllReviews = () => {
     const options = {
       loop: true,
       center: true,
-      items: 3,
+      items: 1,
       margin: 0,
       autoplay: true,
       dots: true,
@@ -39,7 +39,10 @@ const AllReviews = () => {
               items: 1
           },
           600: {
-              items: 3
+              items: 1
+          },
+          900: {
+              items: 2
           },
           1000: {
               items: 3
@@ -50,7 +53,7 @@ const AllReviews = () => {
 
 
     return (
-      <div className="bgColor">
+      <div className="bgColor pt-5 pb-5">
       <div className="container pt-5">
       <h2>ALl Reserved {reviews.length}</h2>
         
@@ -61,7 +64,7 @@ const AllReviews = () => {
                     <h3 className="sectionTitle">What Our Clients are Saying?</h3>
                 </div>
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12 m-auto">
                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
                             {
                                 reviews.length === 0 ?
