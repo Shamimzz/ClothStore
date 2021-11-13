@@ -14,6 +14,7 @@ const Review = () => {
 
     // Add Service on database.................
     const onSubmit = data =>{
+        data.img = user.photoURL;
         console.log(data);
       fetch(`http://localhost:5000/reviewInserting`,{
           method: 'POST',

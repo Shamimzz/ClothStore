@@ -2,6 +2,13 @@ import React, { useEffect, useState} from 'react';
 import { Card, Carousel, Col, Row } from 'react-bootstrap';
 import "./AllReviews.css";
 
+
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import SingleReview from './SingleReview/SingleReview';
+
+
 const AllReviews = () => {
    const [reviews, setReviews] = useState([]);
 
@@ -14,30 +21,75 @@ const AllReviews = () => {
      })
    })
 
+
+
+    //Owl Carousel Settings
+    const options = {
+      loop: true,
+      center: true,
+      items: 3,
+      margin: 0,
+      autoplay: true,
+      dots: true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      nav: false,
+      responsive: {
+          0: {
+              items: 1
+          },
+          600: {
+              items: 3
+          },
+          1000: {
+              items: 3
+          }
+      }
+  };
+
+
+
     return (
+      <div className="bgColor">
       <div className="container pt-5">
-       <h2>ALl Reserved {reviews.length}</h2>
-       <Carousel>
+      <h2>ALl Reserved {reviews.length}</h2>
+        
+      <section id="testimonial" className="testimonials pt-70 pb-70">
+            <div className="container mt-5">
+                <h4 className="miniTitle text-center">TESTIMONIALS</h4>
+                <div className="text-center ">
+                    <h3 className="sectionTitle">What Our Clients are Saying?</h3>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
+                            {
+                                reviews.length === 0 ?
+                                    <div class="item">
+                                        <div class="shadow-effect">
+                                            {/* <img class="img-circle" src={reviews.img} /> */}
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                        </div>
+                                        <div class="testimonial-name">
+                                            <h5>Rajon Rony</h5>
+                                            <small>ITALY</small>
+                                        </div>
+                                      </div>  
+                                      :
+                                    reviews.map(review => <SingleReview
+                                      review={review}
+                                      key={review._id} 
+                                     />
+                                    )               
+                            } 
+                        </OwlCarousel>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-       <Row xs={1} md={2} className="g-4">
-        {reviews.map((pd, idx) => (
-         <Carousel.Item>
-            {/* <img
-              className="d-block w-100"
-              src={pd?.img}
-              alt="First slide"
-            /> */}
-            <Carousel.Caption>
-              <h5 className="text-black"> className="text-black"{pd?.title}</h5>
-              <p>{pd?.email}</p>
-              <p className="text-black">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-            ))} 
-         </Row> 
 
-
-      </Carousel>
+      </div>
       </div>
     );
 };
@@ -46,15 +98,81 @@ export default AllReviews;
 
 
 
-//      <img
-// className="d-block sliderImg"
-// src="https://lh3.googleusercontent.com/proxy/PNxaEn74BQpx1Kof7r1EWeI3uMcPR_Hc_YYyiZKdcSHNj3R-FbzHBk4SXP42Nzgv4shaewHj7YnoTS-5IYvcOw_ZxwgX0umhgqsAPVUf67pZuECrdCJ0ztG1_2TiUPVuxkqZW8ZMp744UPtXPrK1F3sW9VNsyjjqL19kJR2bMkPq1Nra6c4"
-// alt="First slide"
-// />
-// <Carousel.Caption>
-// <h3>First slide label</h3>
-// <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-// </Carousel.Caption> 
+
+                    
+
+
+
+                                    //   <Row xs={1} md={2} className="g-4">
+                                    //    {reviews.map((pd, idx) => (
+                                    //       <Col className="m-3">
+                                    //         <Card className="p-3">
+                                    //           <Card.Img className="circle" variant="top" src={pd?.img} />
+                                    //           <Card.Body>
+                                    //             <Card.Title>{pd?.title}</Card.Title>
+                                    //             <Card.Text>
+                                    //              {pd?.des}
+                                    //             </Card.Text>
+                                    //             <Card.Text>
+                                    //              {pd?.price}
+                                    //             </Card.Text>
+                                    //           </Card.Body>
+                                    //         </Card>
+                                    //       </Col>
+                                    //     ))}
+                                    //   </Row>
+
+
+
+
+// reviews.length === 0 ?
+// <div class="item">
+//     <div class="shadow-effect">
+//         <img class="img-circle"/>
+
+//         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+//     </div>
+//     <div class="testimonial-name">
+//         <h5>Rajon Rony</h5>
+//         <small>ITALY</small>
+//     </div>
+// </div> :
+
+
+
+
+
+
+
+
+
+
+
+
+// {/* <h2>ALl Reserved {reviews.length}</h2>
+// <Carousel>
+
+// <Row xs={1} md={2} className="g-4">
+//  {reviews.map((pd, idx) => (
+//   <Carousel.Item>
+//      {/* <img
+//        className="d-block w-100"
+//        src={pd?.img}
+//        alt="First slide"
+//      /> */}
+//      <Carousel.Caption>
+//        <h5 className="text-black"> className="text-black"{pd?.title}</h5>
+//        <p>{pd?.email}</p>
+//        <p className="text-black">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//      </Carousel.Caption>
+//    </Carousel.Item>
+//      ))} 
+//   </Row> 
+// </Carousel> */}
+
+
+
+
 
 
 

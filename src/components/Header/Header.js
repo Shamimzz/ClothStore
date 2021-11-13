@@ -35,9 +35,9 @@ const Header = () => {
                   <span>{user?.email && <img className="profileImg" src={user.photoURL} alt=""/>}</span>
                </Navbar.Text> 
                { !user.email ? 
-                <Nav.Link as={Link} to="/login#login" className="btn btn-black color text-dark m-3"><AiOutlineLogin /> Log In</Nav.Link>
+                <Nav.Link as={Link} to="/login#login" className="btn btn-black text-white color m-3"><AiOutlineLogin /> Log In</Nav.Link>
                 :
-               <span><Button onClick={handleLogOut} className="btn btn-black color m-3" to="/logout"><AiOutlineLogout/> SignOut</Button>
+               <span><Button onClick={handleLogOut} className="btn btn-black text-white color m-3" to="/logout"><AiOutlineLogout/> SignOut</Button>
                 {
                   admin ?
                    <Link to="/dashboard/adminDashboard" className="text-bold fs-3" type="submit"><MdDashboardCustomize/></Link>
