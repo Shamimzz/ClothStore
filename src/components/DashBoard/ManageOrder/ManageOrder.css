@@ -396,6 +396,12 @@ ul {
   padding-top: 10px;
 }
 
+
+.serviceImg{
+	width: 50px;
+	height: 50px;
+}
+
 /* mois (Mon-Sun) */
 .mois {
   margin: 0;

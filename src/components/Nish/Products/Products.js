@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './Products.css';
 import { HashLink as Link } from 'react-router-hash-link';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import Header from '../../Header/Header';
 import useAuth from '../../../hooks/useAuth';
 
 // swal alert.
@@ -70,7 +69,6 @@ const Products = () => {
 
     return (
         <div>
-          <Header></Header>
           <div className="row pt-5">
               <h2 className="fs-1">#Exclusive<span className="text"> Collections</span> </h2>
           </div>

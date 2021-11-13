@@ -17,19 +17,23 @@ import Blog from './components/Blog/Blog';
 import PlaceOrder from './components/Shipping/PlaceOrder/PlaceOrder';
 import DashBoard from './components/DashBoard/DashBoard/DashBoard';
 import AllReviews from './components/AllReviews/AllReviews';
+import Slider from './components/Slider/Slider';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
        <BrowserRouter>
-         {/* <Header></Header> */}
+         <Header></Header>
          <Switch>
            <Route exact path="/">
              <Home></Home>
            </Route>
            <Route exact path="/home">
              <Home></Home>
+           </Route>
+           <Route exact path="/slider">
+             <Slider></Slider>
            </Route>
            <Route exact path="/products">
              <Products></Products>
@@ -71,7 +75,7 @@ function App() {
              <Notfound></Notfound>
            </Route>
          </Switch>
-         {/* <Footer></Footer> */}
+         <Footer></Footer>
        </BrowserRouter>
       </AuthProvider>
     </div>

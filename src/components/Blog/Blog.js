@@ -18,10 +18,10 @@ const Blog = () => {
                          <div class="price">
                            <s>$24.00</s>$19.00
                          </div>
-		        		   <button className="blog-btn">Read More</button>
+		        		           <button className="blog-btn">Read More</button>
                            </figcaption><a href="#"></a>
                         </figure>
-		        	 </div>
+                 </div>
 		             <div className="col-md-4 col-sm-6">
 		                <figure class="snip1418 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample96.jpg" alt="sample96"/>
                          <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
