@@ -13,7 +13,7 @@ const Slider = () => {
         <Carousel.Item interval={1500} className="imgDiv">
           <img 
             className="carouselImg"
-            src="https://i.ibb.co/MnMBnB4/cover1.jpg"
+            src="https://i.ibb.co/qy3CT2X/cover2.jpg"
             alt="First slide"
           />
           <Carousel.Caption className="caption carousel-contet">
@@ -26,7 +26,7 @@ const Slider = () => {
         <Carousel.Item interval={1500} className="imgDiv">
           <img
             className="carouselImg"
-            src="https://i.ibb.co/MZ5wB4s/cover2.jpg"
+            src="https://i.ibb.co/4T9xHh1/slider2.jpg"
             alt="Second slide"
           />
           <Carousel.Caption className="caption carousel-contet">
@@ -39,7 +39,7 @@ const Slider = () => {
         <Carousel.Item interval={1500} className="imgDiv">
           <img
             className="carouselImg"
-            src="https://i.ibb.co/4WQsy6H/cover3.jpg"
+            src="https://i.ibb.co/Jy4XGxs/cover5.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption carousel-contet">
@@ -52,12 +52,12 @@ const Slider = () => {
         <Carousel.Item interval={1500} className="imgDiv">
           <img
             className="carouselImg"
-            src="https://i.ibb.co/HqLNL6q/cover4.jpg"
+            src="https://i.ibb.co/r6cjYcJ/cover1.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption carousel-contet">
-             <h1 class="text-white">THE WATCH EVERYONE</h1>
-             <h1 class="heroText">DESIRE</h1>
+             <h1 class="text-white">CHOOSE YOUR BEST</h1>
+             <h1 class="heroText">PRODUCTS</h1>
              <p className="carousel-contet">Drag and drop anywhere you want and start uploading your images now</p>
             <Link to="/products" class="btn btn-black heroBtn">SHOP NOW</Link>
           </Carousel.Caption>

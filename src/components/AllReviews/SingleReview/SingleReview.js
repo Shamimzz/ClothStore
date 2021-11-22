@@ -11,7 +11,7 @@ const SingleReview = ({review}) => {
     return (
         <div class="item">
         <div class="shadow-effect">
-            <img class="img-circle" src={img}/>
+            <img class="img-circle" src={img} alt="good"/>
             <h5>{name}</h5>
             <p>{email}</p>
             <p>{comments}</p>

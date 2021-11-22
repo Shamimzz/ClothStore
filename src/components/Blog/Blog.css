@@ -93,16 +93,6 @@
   right: 0;
 }
 
-/* .snip1418:hover .add-to-cart,
-.snip1418.hover .add-to-cart {
-  opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-.snip1418:hover .add-to-cart i,
-.snip1418.hover .add-to-cart i {
-  background-color: #2980b9;
-} */
 
 .cote{
     color: #fd3d6b;
@@ -118,7 +108,7 @@
     margin-bottom: 15px;
 }
 .blog-btn:hover {
-  border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     background: linear-gradient(-155deg,#fd3d6b 0,#fd7863 98%,#f3dfe0 100%);
     width: 120px;

@@ -26,7 +26,6 @@ const PlaceOrder = () => {
   // }
 
 
-
     useEffect(()=>{
       fetch(`https://grisly-werewolf-53088.herokuapp.com/singleProduct/${productId}`)
       .then(res=> res.json())
@@ -34,7 +33,7 @@ const PlaceOrder = () => {
         setOrders(data)
         console.log(data)
       })
-    },[])
+    },[productId])
 
       const onSubmit = (data) => {
         data.email = user?.email;
@@ -76,37 +75,36 @@ const PlaceOrder = () => {
     return (
         <div>
           <div className="container pt-5 pb-5">
+            <h1>Shipping Information</h1>
             <div className="row">
-              <div className="col-md-7 col-sm-12">
-                <div class="card">
-                <span id="green-arrow"><a href="#">&#8592;</a></span>
-                <div className="d-flex">
-                <div class="item">
-                   <div class="text">
-                     <h1>EXECUTIVE</h1>
-                     <h2>Office Chair</h2>
-                     <span id="price1">{orders?.price}</span>
-                     <img src={orders?.img}/>
-                   </div>
+              <div className="col-md-6 col-sm-12">
+              <div className="shell">
+                 <div className="wsk-cp-product">
+                   <div className="wsk-cp-img">
+                     <img className="imgPlace" src={orders?.img} alt=""/>
                  </div>
-                 <div class="item">
-                    <p>{orders?.des}</p>
-                    <div class="stock">In Stock</div><br/>
-                    <div>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" id="grey" aria-hidden="true"></i><span class="open">  &nbsp;(4.5 - 30 reviews)</span>
-                   </div><br/>
-                   {/* <div><button id="cart">ADD TO CART</button></div> */}
+                 <div className="wsk-cp-text">
+                   <div className="category">
+                     <span>Ethnic</span>
+                   </div>
+                   <div className="title-product">
+                     <h3>{orders?.title}</h3>
+                     </div>
+                     <div className="description-prod">
+                       <p>{orders?.des}</p>
+                     </div>
+                     <div className="card-footer">
+                       <div className="wcf-left"><span className="price">{orders?.price}</span></div>
+                       <div className="wcf-right">
+                       
+                       </div>
+                     </div>
                   </div>
                 </div>
-               </div>
+              </div>
              </div>
-             <div className="col-md-5 col-sm-12">
-		          	<div class="main-login main-center">
-                    <h4>Shipping Information</h4>
+             <div className="col-md-6 col-sm-12">
+		          	<div class="p-3 bow-shadow-lg">
 		          			<form onSubmit={handleSubmit(onSubmit)} class="form-horizontal">
           
 		          				<div class="form-group">

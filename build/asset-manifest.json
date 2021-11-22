@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.c91c1614.chunk.css",
-    "main.js": "/static/js/main.82054410.chunk.js",
-    "main.js.map": "/static/js/main.82054410.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f0b22203.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f0b22203.js.map",
+    "main.css": "/static/css/main.fb7dfe5d.chunk.css",
+    "main.js": "/static/js/main.0faf805b.chunk.js",
+    "main.js.map": "/static/js/main.0faf805b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5600d207.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5600d207.js.map",
     "static/css/2.cdcdbcf0.chunk.css": "/static/css/2.cdcdbcf0.chunk.css",
-    "static/js/2.ccb4a3c5.chunk.js": "/static/js/2.ccb4a3c5.chunk.js",
-    "static/js/2.ccb4a3c5.chunk.js.map": "/static/js/2.ccb4a3c5.chunk.js.map",
-    "static/js/3.86b43b96.chunk.js": "/static/js/3.86b43b96.chunk.js",
-    "static/js/3.86b43b96.chunk.js.map": "/static/js/3.86b43b96.chunk.js.map",
+    "static/js/2.f3a127ff.chunk.js": "/static/js/2.f3a127ff.chunk.js",
+    "static/js/2.f3a127ff.chunk.js.map": "/static/js/2.f3a127ff.chunk.js.map",
+    "static/js/3.279c7549.chunk.js": "/static/js/3.279c7549.chunk.js",
+    "static/js/3.279c7549.chunk.js.map": "/static/js/3.279c7549.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.cdcdbcf0.chunk.css.map": "/static/css/2.cdcdbcf0.chunk.css.map",
-    "static/css/main.c91c1614.chunk.css.map": "/static/css/main.c91c1614.chunk.css.map",
-    "static/js/2.ccb4a3c5.chunk.js.LICENSE.txt": "/static/js/2.ccb4a3c5.chunk.js.LICENSE.txt",
+    "static/css/main.fb7dfe5d.chunk.css.map": "/static/css/main.fb7dfe5d.chunk.css.map",
+    "static/js/2.f3a127ff.chunk.js.LICENSE.txt": "/static/js/2.f3a127ff.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/static/media/arrow_right.f7c6ac6d.svg",
     "static/media/all.min.css": "/static/media/fa-solid-900.eeccf4f6.woff",
     "static/media/About.css": "/static/media/foodbanner.af296c1a.jpg",
-    "static/media/Notfound.css": "/static/media/notfound.1587f5be.png",
-    "static/media/slider-courier-mask.03ddfa8c.png": "/static/media/slider-courier-mask.03ddfa8c.png"
+    "static/media/Notfound.css": "/static/media/notfound.1587f5be.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0b22203.js",
+    "static/js/runtime-main.5600d207.js",
     "static/css/2.cdcdbcf0.chunk.css",
-    "static/js/2.ccb4a3c5.chunk.js",
-    "static/css/main.c91c1614.chunk.css",
-    "static/js/main.82054410.chunk.js"
+    "static/js/2.f3a127ff.chunk.js",
+    "static/css/main.fb7dfe5d.chunk.css",
+    "static/js/main.0faf805b.chunk.js"
   ]
 }

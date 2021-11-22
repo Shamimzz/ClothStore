@@ -19,9 +19,9 @@ const MyOrders = () => {
        .then(data => {
          setProducts(data)
          console.log(data);
-         if(data.length === 0){
-          setIsLoading(false);
-         }
+        //  if(data.length === 0){
+        //   setIsLoading(false);
+        //  }
        })
     },[Isdelete])
  

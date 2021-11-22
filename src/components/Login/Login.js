@@ -1,6 +1,7 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import './Login.css';
+import { AiOutlineLogin } from "react-icons/ai";
 
 // swal alert.
 import swal from 'sweetalert';
@@ -84,7 +85,7 @@ const Login = () => {
 
       <div className="signup-form">
             <form onSubmit={SignInWithEmail}>
-            <h4>Please Log In First</h4>
+            <h1>Please Log In First</h1>
               <div className="form-group">       	
                 </div>
                 <div className="form-group">
@@ -105,7 +106,7 @@ const Login = () => {
             </form>
            <div className="mb-3" controlId="formBasicCheckbox">
                <h6 className="text-muted">Sign In with</h6>
-               <Button onClick={handelGoogle} className="btn btn-sm btn-darger" type="submit"><FaGoogle color="red" fontSize="30px"/>oogle</Button>      
+               <Button onClick={handelGoogle} className="btn btn-sm fs-4" type="submit"><AiOutlineLogin /> Google</Button>      
                {/* <Button onClick={handelFacbook} className="btn btn-sm" type="submit"><FaFacebook color="green" fontSize="20px"/></Button> */}
              </div>
            <Button to="/signup" as={Link} className="btn btn-info text-decoration-none text-light" type="submit">Register Account</Button>

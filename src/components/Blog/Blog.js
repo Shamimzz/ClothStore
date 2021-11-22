@@ -7,13 +7,13 @@ import { HashLink as Link } from 'react-router-hash-link';
 const Blog = () => {
     return(         
            <>    
-           <div className="container">
+           <div className="container pt-5 pb-5">
                 <div className="row">
-                    <h2 className="fs-1">#B<span className="cote">log</span> </h2>
+                    <h1>#Blog</h1>
                 </div>
                 <div className="row">	  
                    <div className="col-md-4 col-sm-6">	   	 
-                      <figure class="snip1418"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85"/>
+                      <figure class="snip1418"><img src="https://i.ibb.co/q1v4YRx/products14.jpg" alt="sample85"/>
                        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
                       <figcaption>
                          <h3>Pudol Doux</h3>
@@ -26,7 +26,7 @@ const Blog = () => {
                         </figure>
                  </div>
 		             <div className="col-md-4 col-sm-6">
-		                <figure class="snip1418 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample96.jpg" alt="sample96"/>
+		                <figure class="snip1418 hover"><img src="https://i.ibb.co/xmGvZYw/products1.jpg" alt="sample96"/>
                          <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
                          <figcaption>
                            <h3>Kurie Secco</h3>
@@ -39,7 +39,7 @@ const Blog = () => {
                         </figure>
 		        	 </div>
 		             <div className="col-md-4 col-sm-6">
-		        	 <figure class="snip1418"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample92.jpg" alt="sample92"/>
+		        	 <figure class="snip1418"><img src="https://i.ibb.co/7K3dDDX/products13.jpg" alt="sample92"/>
                         <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
                         <figcaption>
                           <h3>Zosaisan Invec</h3>

@@ -19,6 +19,7 @@ import { FcBiotech } from "react-icons/fc";
 import Review from '../Review/Review';
 import ManageProducts from '../ManageProducts/ManageProducts';
 import AdminDashBoard from '../AdminDashBoard/AdminDashBoard';
+import Payments from '../Payments/Payments';
 
 
 
@@ -44,6 +45,9 @@ const DashBoard = () => {
                </Link>
               <Link to={`${url}/myOrders`}>
                 <li className="dashboard-menu"><span class="fa fa-tasks"></span>My-Orders</li>
+              </Link> 
+              <Link to={`${url}/payments`}>
+                <li className="dashboard-menu"><span class="fa fa-tasks"></span>Payments</li>
               </Link> 
               <Link to={`${url}/review`}>
                 <li className="dashboard-menu"><span class="fa fa-tasks"></span>Review</li>
@@ -121,6 +125,9 @@ const DashBoard = () => {
                        <Route exact path={`${path}/myOrders`}>
                           <MyOrders></MyOrders>
                        </Route>
+                       <Route exact path={`${path}/payments`}>
+                          <Payments></Payments>
+                       </Route>
                     
                        <Route exact path={`${path}/addServices`}>
                          <AddServices></AddServices>
@@ -132,7 +139,12 @@ const DashBoard = () => {
                  </div>
                </div>
              </div>
+
 		   </main>
+       
+       <div className="row dashFooter">
+             
+       </div>
 	  </div>
 	  </div>
     </>

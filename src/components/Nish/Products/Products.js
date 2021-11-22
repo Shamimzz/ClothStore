@@ -8,9 +8,8 @@ import useAuth from '../../../hooks/useAuth';
 import Swal from 'sweetalert2'
 
 
-
-import { useHistory } from 'react-router';
-import Button from '@restart/ui/esm/Button';
+// import { useHistory } from 'react-router';
+// import Button from '@restart/ui/esm/Button';
 
 
 const Products = () => {
@@ -19,11 +18,11 @@ const Products = () => {
   
 
   // Histroy & Location for redirect...........
-  const history = useHistory();
-  const location = {
-   pathname: '/placeOrder',
-   state: { fromDashboard: true }
-  }
+  // const history = useHistory();
+  // const location = {
+  //  pathname: '/placeOrder',
+  //  state: { fromDashboard: true }
+  // }
 
   // Useing Get method to show or read all data in Client Site.
    useEffect( () => {
@@ -33,44 +32,10 @@ const Products = () => {
    }, [])
 
 
-
-  // const handleBooking = (id) => {
-  //    id.email = user.email;
-    
-  //    fetch('https://grisly-werewolf-53088.herokuapp.com/ConfirmOrder', {
-  //      method: 'POST',
-  //      headers: { 'Content-Type': 'application/json'},
-  //      body: JSON.stringify(id),
-  //    }).then(res=>res.json())
-  //      .then(data => {
-  //         console.log(data)
-  //         if(data.insertedId){
-  //           Swal.fire(
-  //             'Product Added!',
-  //             'Thanks for Stay with Us!',
-  //             'success'
-  //           )
-  //           console.log('Booking', id);
-  //           history.push(location)
-  //          }
-  //          else{
-  //           history.push('/products')
-  //           Swal.fire(
-  //             'Ops',
-  //             'Products Already Exist',
-  //             'error'
-  //           )
-  //          }
-  //      })
-  // }
-
-  // onClick={()=>handleBooking(pd?._id)} 
-
-
     return (
         <div>
           <div className="row pt-5">
-              <h2 className="fs-1">#Exclusive<span className="text"> Collections</span> </h2>
+              <h1> #Exclusive </h1>
           </div>
           <div className="shell">
             <div className="container">

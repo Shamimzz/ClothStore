@@ -28,7 +28,7 @@ const Header = () => {
                   <Link to="/home" className="link">Home</Link>
                   <Link to="/products" className="link">Products</Link>
                   {/* <Link to="/blog" className="link">Blog</Link>  */}
-                  <Link to="/blog" className="link">Life-Style</Link>
+                  <Link to="/blog" className="link">Blog</Link>
                </Nav>  
                <Navbar.Text className="">
                   <a href="#login" className="p-2 name text-white">{user?.email && user.displayName}</a>
@@ -40,7 +40,7 @@ const Header = () => {
                <span><Button onClick={handleLogOut} className="btn btn-black text-white color m-3" to="/logout"><AiOutlineLogout/> SignOut</Button>
                 {
                   admin ?
-                   <Link to="/dashboard/adminDashboard" className="text-bold fs-3" type="submit"><MdDashboardCustomize/></Link>
+                   <Link to="/dashboard/adminDashboard" className="text-bold fs-3 text-white" type="submit"><MdDashboardCustomize/></Link>
                    :
                    <Link to="/dashboard" className="text-bold fs-3" type="submit"><MdDashboardCustomize color="white" /></Link>
                 }
@@ -54,8 +54,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
 
 
 

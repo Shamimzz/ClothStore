@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <AuthProvider>
        <BrowserRouter>
-         <Header></Header>
+         <Header></Header> 
          <Switch>
            <Route exact path="/">
              <Home></Home>
@@ -41,7 +41,7 @@ function App() {
            <Route exact path="/blog">
              <Blog></Blog>
            </Route>
-           <PrivateRoute exact path="/collection">
+           <PrivateRoute exact path="/collection">  
              <Collection></Collection>
            </PrivateRoute>
            <Route exact path="/signup">

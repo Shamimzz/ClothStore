@@ -55,7 +55,7 @@ const SignUp = () => {
         <div>
             <div className="signup-form">
             <form onSubmit={SignUpWithEmail}>
-        	 <h2>Register Your Account</h2>
+        	 <h1>Register Your Account</h1>
         		<p className="hint-text">Create your account. It's free and only takes a minute.</p>
                 <div className="form-group">
         		  <div className="row">

@@ -19,7 +19,7 @@ const Footer = () => {
             <div class="container pt-5 pb-5">
               <div class="row">
                 <div class="col-lg-4 col-md-6 footer-contact">
-                  <h3 className="text-light">BeFoody</h3>
+                  <h3 className="text-light">ClothStore</h3>
                   <div>
                     <p>A108 Saver Street</p>
                     <p> Dhaka, NY 535022</p>
@@ -29,7 +29,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 footer-links">
-                  <h3 className="text-light">Useful Links</h3>
+                  <h3 className="text-light">Get In Touch</h3>
                   <ul>
                     <li><Link to="*">Our Services</Link></li>
                     <li><Link to="*">Privacy Policy</Link></li>
@@ -40,10 +40,10 @@ const Footer = () => {
                 <div class="col-lg-4 col-md-6 footer-links">
                   <h3 className="text-light">Our Services</h3>
                   <ul>
-                    <li><Link to="*">Food Reviews</Link></li>
-                    <li><Link to="*">Food Qualities</Link></li>
+                    <li><Link to="*">Cloth Reviews</Link></li>
+                    <li><Link to="*">Cloth Qualities</Link></li>
                     <li><Link to="*">Service Management</Link></li>
-                    <li><Link to="*">Traditions Foods</Link></li>
+                    <li><Link to="*">Traditions Cloth</Link></li>
                   </ul>
                 </div>
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
           <div class="container d-md-flex justify-content-between py-4">
             <div class="mr-md-auto text-center text-md-left">
               <div class="copyright">
-                &copy; Copyright <strong><span>BeFoody</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>ClothStore</span></strong>. All Rights Reserved
               </div>
               <div class="credits">
                 Designed by <a href="https://github.com/Shamimzz">Shamimzz</a>

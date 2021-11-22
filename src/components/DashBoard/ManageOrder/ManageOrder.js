@@ -22,14 +22,15 @@ const ManageOrder = () => {
         .then(data => {
          setOrders(data)
         })
-     },[Isdelete])
+     },[Isdelete])   
 
   
   // handle Delete......
   const handleDelete = (key) => {
+    const confirmMessage = "Are you sure, you want to delete all the new tour packages?"
+    if (window.confirm(confirmMessage)) {
    fetch(`https://grisly-werewolf-53088.herokuapp.com/dashboard/myOrders/${key}`, {
      method: 'DELETE',
-    //  headers: {"Content-Type": "application/json"},
    }).then(res => res.json())
      .then(data => {
         console.log(data)
@@ -41,7 +42,31 @@ const ManageOrder = () => {
         }
     })
  }
-  
+}
+
+
+
+
+//  const handleDeleteAllNewTours = () => {
+//   const confirmMessage = "Are you sure, you want to delete all the new tour packages?"
+//   if (window.confirm(confirmMessage)) {
+//        //eslint-disable-line
+//        fetch('https://mighty-beyond-61990.herokuapp.com/tours', {
+//             method: 'DELETE'
+//        })
+//             .then(res => res.json())
+//             .then(data => {
+//                  console.log(data)
+//             })
+//   }
+// }
+
+
+
+
+
+
+
 
    // handle Approved...........
    const handleApprove = (id) => {

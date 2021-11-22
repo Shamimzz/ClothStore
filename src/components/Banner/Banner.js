@@ -1,33 +1,77 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Banner.css';
+import { Carousel } from 'react-bootstrap';
 
-import banner from './slider-courier-mask.png';
 
-// Banner part
 const Banner = () => {
-
-    return (
-        <div className="banner">
-           <div className="row pt-5 pb-5" >
-              <div className="col-lg-6 col-md-6 col-sm-12 p-4">
-              <div className="heroText text-Center">
-                  <h4 className="Express">Express</h4>
-                  <h1 className="Care">Home Delivery</h1>
-                  <p className="para">Let your kids get messy and play with their food. Something as simple as spreading peanut butter or another nut butter on a whole wheat English muffin and then creating a smiley face or another decoration with nutrient-rich sliced bananas.</p>
-                 <Button to="/notfound" as={Link} className="search-btn text-decoration-none">View Details</Button>
-             </div>
-              </div>
-              <div className="col-lg-6 col-md-6 col-sm-12 p-4">
-                  <img className="img-fluid" src={banner} alt="" srcset="" />
-              </div>
-           </div>
-        </div>
-    );
+    //  const handleTourBtn = (e) => {
+    //       e.preventDefault();
+    //       const target = e.target.getAttribute('href');
+    //       const location = document.querySelector(target).offsetTop;
+    //       window.scrollTo({
+    //            left: 0,
+    //            top: location - 80,
+    //       })
+    //  }
+     return (
+          <section id="cover">
+               <Carousel fade indicators={false}>
+                    <Carousel.Item className="h-100">
+                         <div className="overlay"></div>
+                         <img
+                              className="d-block w-100"
+                              src="https://i.ibb.co/7JsqWm8/slider-Good.png"
+                              alt="First slide"
+                         />
+                         
+                         <Carousel.Caption>
+                         <h3 className="display-2 fw-bold text-white">SHOPPING IS MY FIRST</h3>
+                              <h3 className="textDe">CHOICE</h3>
+                              {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
+                         </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className="h-100">
+                         <div className="overlay"></div>
+                         <img
+                              className="d-block w-100"
+                              src="https://i.ibb.co/4T9xHh1/slider2.jpg"
+                              alt="Second slide"
+                         />
+                         <Carousel.Caption>
+                              <h3 className="display-2 fw-bold text-white">THE CLOTH EVERYONE</h3>
+                              <h3 className="textDe">DESIRE</h3>
+                              {/* <a href="#tours-section"  className="btn btn-light px-4 py-2">Book Now</a> */}
+                         </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className="h-100">
+                         <div className="overlay"></div>
+                         <img
+                              className="d-block w-100"
+                              src="https://i.ibb.co/Jy4XGxs/cover5.jpg"
+                              alt="Third slide"
+                         />
+                         <Carousel.Caption>
+                              <h3 className="display-2 fw-bold text-white">SHOPPING MAKES ME</h3>
+                              <h3 className="textDe">HAPPY</h3>
+                              {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
+                         </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className="h-100">
+                         <div className="overlay"></div>
+                         <img
+                              className="d-block w-100"
+                              src="https://i.ibb.co/Jy4XGxs/cover5.jpg"
+                              alt="Third slide"
+                         />
+                         <Carousel.Caption>
+                              <h3 className="display-2 fw-bold text-white">CHOOSE YOUR BEST</h3>
+                              <h3 className="textDe">PRODUCTS</h3>
+                              {/* <a href="#tours-section" className="btn btn-light px-4 py-2">Book Now</a> */}
+                         </Carousel.Caption>
+                    </Carousel.Item>
+               </Carousel>
+          </section>
+     );
 };
 
-export default Banner; 
-
-// banner
-// https://codepen.io/Akimzzy/pen/JjGKMoX
+export default Banner;
