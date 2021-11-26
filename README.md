@@ -6,7 +6,7 @@
    multifunctional Service.
    
 ➢ Users can Log in via ( Email & password, Google, Facebook) with firebase 
-   authentication
+   authentication.
    
 ➢ Admin can manage all products, services, user information as well Admin can add 
 another admin.   
