@@ -1,11 +1,12 @@
 # Website Name: ChothStore
+# Live Link : https://clothstore-26d22.web.app/
 ➢ This is a fashion clothstore related website & Fully responsive.
+
 ➢ Designed, developed and kept adding new functions and UI to a huge
    multifunctional Service.
+   
 ➢ Users can Log in via ( Email & password, Google, Facebook) with firebase 
    authentication
-
-# Live Link : https://clothstore-26d22.web.app/
 # Client Site contains:
 1.Header
 2.Banner part.
