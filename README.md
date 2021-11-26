@@ -7,6 +7,9 @@
    
 ➢ Users can Log in via ( Email & password, Google, Facebook) with firebase 
    authentication
+   
+➢ Admin can manage all products, services, user information as well Admin can add 
+another admin.   
 # Client Site contains:
 1.Header
 2.Banner part.
