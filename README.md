@@ -1,5 +1,9 @@
 # Website Name: ChothStore
-Basically This is Food delivery website. it has some food serveres, order sections, my orders, wish-list with some google authentificaton.
+➢ This is a fashion clothstore related website & Fully responsive.
+➢ Designed, developed and kept adding new functions and UI to a huge
+multifunctional Service.
+➢ Users can Log in via ( Email & password, Google, Facebook) with firebase 
+authentication
 
 # Live Link : https://clothstore-26d22.web.app/
 # Client Site contains:
